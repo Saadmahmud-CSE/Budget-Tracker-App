@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+      <div class="flex justify-start bg-slate-100 py-10 px-5 m-10">
+        <input
+          id="inputData"
+          type="number"
+          class="border border-slate-400 rounded p-2 m-3 w-80"
+          placeholder="Enter amount"
+        />
+        <button
+          id="btn"
+          onclick="addIncome()"
+          type="submit"
+          class="bg-blue-500 p-3 m-3 text-white font-bold rounded-md"
+        >
+          Add
+        </button>
+      </div>
+    
+      <div class="flex justify-start bg-slate-100 py-10 px-5 m-10">
+        <h1 class="text-2xl ml-5" id="earning">Income</h1>
+        <h1 class="text-2xl ml-60" id="expend">Expense:</h1>
+      </div>
+
+      <div class="bg-slate-100 py-10 px-5 m-10">
+        <div id="money"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
